@@ -1,0 +1,25 @@
+$colors: (
+  primary: #4038FF,
+  secondary: #6C7689,
+  success: #0AAF60,
+  warning: #FFBE21,
+  error: #EA5B5B,
+);
+
+@mixin badge-color($bg-color) {
+  background-color: $bg-color;
+  color: white;
+}
+
+.badge {
+  width: 80px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 8px;
+
+  @each $name, $color in $colors {
+    &--#{$name} {
+      @include badge-color(#{$color});
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../styles/helpers';
+
+.boxes {
+  $blue-color: hex-to-rgba(#37c6ef, 0.9);
+  $red-color: hex-to-rgba(#ef3776, 0.9);
+  $green-color: hex-to-rgba(#20d226, 0.9);
+
+  display: flex;
+  justify-content: space-between;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    margin: 8px;
+
+    &--blue {
+      background-color: $blue-color;
+    }
+    
+    &--red {
+      background-color: $red-color;
+    }
+    
+    &--green {
+      background-color: $green-color;
+    }
+  }
+}
+

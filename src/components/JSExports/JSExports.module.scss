@@ -1,0 +1,15 @@
+@import './variables';
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+
+  &__box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+}
